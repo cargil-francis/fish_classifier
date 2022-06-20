@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fish species prediction</title>
+
+</head>
+<body background="meen.jpg">
+
+	<div class='login'>
+
+		<h1>PREDICT FISH SPECIES </h1>
+			<h2>This system is to predict the species of the fish according to their length,weight, height and width</h2>
+		
+		<form action="/" method="POST">
+			<input type="text" name ="weight" placeholder="weight" required="required"/><br>
+			<br>
+			<input type="text" name ="length1" placeholder="length1" required="required"/><br>
+			<br>
+			<input type="text" name ="length2" placeholder="length2" required="required"/><br>
+			<br>
+			<input type="text" name ="length3" placeholder="length3" required="required"/><br>
+			<br>
+			<input type="text" name ="height" placeholder="height" required="required"/><br>
+			<br>
+			<input type="text" name ="width" placeholder="width" required="required"/><br>
+			<br><br>
+	
+			<input type="submit" class="btn btn-primary"name="submit"/>
+			<input type="text" id="input" value="{{result}}" name="input"/>
+
+		</form>
+		<br><br>
+		
+	</div>
+
+</body>
+</html>
