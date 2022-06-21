@@ -38,6 +38,20 @@ def main():
         arr = numpy.array(y,dtype = float)
         result = lr.predict([arr])
 
-        return render_template('fish.html',result="{}".format(result[0]))
+
+        if result[0]==0:
+             return render_template('fish.html',result='Fish species is Bream')
+        elif result[0]==1:
+             return render_template('fish.html',result='Fish species is Roach')
+        elif result[0]==2:
+             return render_template('fish.html',result='Fish species is Whitefish')
+        elif result[0]==3:
+             return render_template('fish.html',result='Fish species is Parkki')
+        elif result[0]==4:
+             return render_template('fish.html',result='Fish species is Pike')
+        elif result[0]==5:
+             return render_template('fish.html',result='Fish species is Smelt')
+
+
 
     return render_template("fish.html")
